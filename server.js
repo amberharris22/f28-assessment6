@@ -29,7 +29,7 @@ app.get('/js', (req, res) => {
 
 app.get('/api/robots', (req, res) => {
     try {
-        rollbar.log('all bots received succesfully')
+        rollbar.log('all bots received successfully')
         res.status(200).send(botsArr)
     } catch (error) {
         rollbar.error('Error getting bots')
